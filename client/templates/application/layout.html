@@ -1,11 +1,8 @@
 <!-- containing the apps outer layout -->
 <template name="layout">
   <div class="container">
-    <header class="navbar navbar-default" role="navigation"> 
-      <div class="navbar-header">
-        <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
-      </div>
-    </header>
+<!-- we are giving header its own space as it takes up space -->
+    {{> header}}
     <div id="main">
       {{> yield}}
     </div>
